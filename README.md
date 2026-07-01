@@ -34,3 +34,4 @@ The repository includes four representative tasks illustrating the framework:
 
 - Python 3.10
 - Gurobipy (install via `pip install gurobipy`; a valid Gurobi license is required)
+- Shapely (https://shapely.readthedocs.io/en/stable/manual.html)
