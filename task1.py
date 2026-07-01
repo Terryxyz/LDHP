@@ -1,17 +1,7 @@
-#!/usr/bin/env python
-import os
-import time
-import re
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-import random
+import matplotlib.pyplot as plt
+import numpy as np
 from framework import *
-from shapely.geometry import LineString
-from shapely.geometry import Polygon
-from shapely.geometry import Point
-from shapely.geometry import LinearRing
 
 accuracy = 0.004
 
@@ -92,7 +82,7 @@ if __name__ == "__main__":
         mu_gripper=0.2,
         mu_environment=0.21,
     )
-    if temp_result != False:
+    if temp_result:
         object_pose_trajectory, gripper_pose_trajectory = temp_result
         while True:
             if_continue = input("continue?")

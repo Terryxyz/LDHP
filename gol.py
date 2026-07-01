@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 global _global_dict
 _global_dict = {}
  

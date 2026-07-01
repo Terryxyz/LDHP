@@ -1,6 +1,6 @@
 def xlen(lst, start=0, step=1):
     '''用xlen函数直接获得一个列表的索引'''
-    return xrange(start, start + len(lst), step)
+    return range(start, start + len(lst), step)
 
 
 #to get the most nearest int from float

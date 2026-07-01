@@ -1,21 +1,9 @@
-#!/usr/bin/env python
-import os
-import time
-import re
 import numpy as np
-import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-import random
 from framework import *
 from math import *
 from jerk import *
-from shapely.geometry import LineString
-from shapely.geometry import Polygon
-from shapely.geometry import Point
-from shapely.geometry import LinearRing
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 accuracy = 0.004
 
@@ -70,11 +58,8 @@ if __name__ == '__main__':
     target_finger_position=None
     #try:
     temp_result = framework(initial_object_vertex_position, initial_CoM_position, initial_gripper_pose, target_object_vertex_position, target_finger_position, environment, 'Type 2', mu_gripper=0.6, mu_environment=0.03)
-    #temp_result = True
-    if temp_result != False:
+    if temp_result:
         object_pose_trajectory, gripper_pose_trajectory = temp_result
-        #object_pose_trajectory = [[[1+i,0.7], [1+i,0], [2.5+i,0], [2.5+i,0.7]] for i in [0.1,0.2,0.3,0.4]]
-        #gripper_pose_trajectory = [(1.4+i, 2, 0.8, 90, '+') for i in [0.1, 0.2, 0.3, 0.4]]
         while True:
             if_continue = input("continue?")
             if if_continue != '':
