@@ -7,6 +7,7 @@ import gurobipy
 import numpy as np
 from jerk import *
 from shapely.geometry import LinearRing, LineString, Point, Polygon
+from shapely.affinity import translate
 
 gurobipy.setParam("LogToConsole", 0)
 gurobipy.setParam("OutputFlag", 0)
