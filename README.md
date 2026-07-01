@@ -33,5 +33,5 @@ The repository includes four representative tasks illustrating the framework:
 ## Dependencies
 
 - Python 3.10
-- Gurobipy (install via `pip install gurobipy`; a valid Gurobi license is required)
+- Gurobipy (install via `pip install gurobipy`; a valid Gurobi license is required; https://www.gurobi.com/resources/faq/gurobipy)
 - Shapely (https://shapely.readthedocs.io/en/stable/manual.html)
